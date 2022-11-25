@@ -19,3 +19,5 @@ char* Strcpy(char* src)
 	}
 	return p;
 }
+
+
