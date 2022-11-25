@@ -1,0 +1,21 @@
+
+char* Strcpy(char* src)
+{
+	int len;
+	len = strlen(src);
+	char* p;
+	p = (char*)malloc(sizeof(char) * (len + 1));
+	if(p) *p = *src;
+	for (int i = 0; i < len - 1; i++) {
+		//p++;
+		//src++;
+		//if(p)*p = *src;
+		p[i] = src[i];
+	}
+	p++;
+	if(p)*p = '\0';
+	for (int i = 0; i <=len ; i++) {
+		printf("%c", *(p+i));
+	}
+	return p;
+}
